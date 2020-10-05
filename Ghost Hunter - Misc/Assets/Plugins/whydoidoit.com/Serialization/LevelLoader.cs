@@ -55,7 +55,7 @@ public class LevelLoader : MonoBehaviour
         {
             return;
         }
-        if (!_loading && Event.current.type == EventType.repaint)
+        if (!_loading && Event.current.type == EventType.Repaint)
         {
             _alpha = Mathf.Clamp01(_alpha - 0.02f);
         }
@@ -364,7 +364,7 @@ public class LevelLoader : MonoBehaviour
 		                                DestroyImmediate(list.Last());
 		                                list.Remove(list.Last());
 		                            }
-		                            if (type == typeof (NavMeshAgent))
+		                            if (type == typeof (UnityEngine.AI.NavMeshAgent))
 		                            {
 		                                var cp1 = cp;
 		                                var item1 = item;

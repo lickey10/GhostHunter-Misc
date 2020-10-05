@@ -102,7 +102,7 @@ public class JSONLevelLoader : MonoBehaviour
         {
             return;
         }
-        if (!loading && Event.current.type == EventType.repaint)
+        if (!loading && Event.current.type == EventType.Repaint)
         {
             alpha = Mathf.Clamp01(alpha - 0.02f);
         }
@@ -409,7 +409,7 @@ public class JSONLevelLoader : MonoBehaviour
 		                                DestroyImmediate(list.Last());
 		                                list.Remove(list.Last());
 		                            }
-		                            if (type == typeof (NavMeshAgent))
+		                            if (type == typeof (UnityEngine.AI.NavMeshAgent))
 		                            {
 		                                var cp1 = cp;
 		                                var item1 = item;

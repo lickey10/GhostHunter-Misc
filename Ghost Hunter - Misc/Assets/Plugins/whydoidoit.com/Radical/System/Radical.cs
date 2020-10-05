@@ -675,7 +675,7 @@ public static class Radical
 	
 	public static T Find<T>(this GameObject go, string name) where T : Component
 	{
-		go = go.transform.FindChild(name).gameObject;
+		go = go.transform.Find(name).gameObject;
 		return go.GetComponentInChildren<T>();
 	}
 	
